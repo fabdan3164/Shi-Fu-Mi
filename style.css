@@ -1,0 +1,74 @@
+img {
+    max-width: 40px;
+    vertical-align: middle;
+    height: auto;
+   }
+
+body {
+    background-image: url(fingers-149295.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.container {
+    width: 500px;
+    margin : 50px auto ;
+    text-align: center;
+    border: dashed grey 1px;
+    padding: 15px;
+    background-color: rgba(250, 235, 215, 0.892);
+}
+
+
+button {
+    width: 80px;
+    height: 80px;
+    border: none;
+    background-color: rgba(255, 0, 0, 0);
+    margin: 15px;
+}
+
+td {
+width: 200px;
+height: 40px;
+margin: 0;
+}
+
+
+table {
+  margin: 10px auto;
+}
+
+#repia {
+ display: flex;
+ justify-content: center;
+}
+
+button:hover{
+    transition: all ease 0.5s;
+    transform: scale(1.2);
+}
+
+#repia {
+    min-height: 50px;
+}
+
+.result {
+    min-height: 30px;
+}
+
+#level1 , #level2, #level0 {
+    border: dashed 1px grey;
+    width: 100px;
+    height: 50px;
+}
+
+.level1, .level2 {
+    display: none;
+}
+
+h6 {
+    color: grey;
+    margin: 0;
+}
