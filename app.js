@@ -1,4 +1,3 @@
-
 let repia = document.querySelector('#repia');
 let result = document.querySelector('.result');
 
@@ -12,7 +11,6 @@ let buttonlevel0= document.querySelector('#level0');
 let tabgagner = document.querySelector('#gagner');
 let tabegalite = document.querySelector('#egalite');
 let tabperdu = document.querySelector('#perdu');
-
 
 let applause = new Audio('applause.mp3');
 let lost= new Audio('boo.mp3');
@@ -36,6 +34,7 @@ window.onload = function () {
 const level_0 = () => {
 
         select = Math.floor(Math.random() * 3 + 1);
+        
         if (select === 1) {
             ia = "Pierre";
             repia.innerHTML = '<img src="hand-rock-regular.svg" alt="">'
@@ -284,12 +283,27 @@ buttonlevel0.onclick = () => {
     document.querySelector('.level1').style.display = 'none';
     document.querySelector('.level0').style.display = 'block';
     document.querySelector('.level2').style.display = 'none';
+    buttonlevel0.style.backgroundColor = 'rgba(128, 128, 128, 0.281)';
+    buttonlevel1.style.backgroundColor = 'transparent';
+    buttonlevel2.style.backgroundColor = 'transparent';
 }
 
 buttonlevel1.onclick = () => { 
     document.querySelector('.level1').style.display = 'block';
     document.querySelector('.level0').style.display = 'none';
     document.querySelector('.level2').style.display = 'none';
+    buttonlevel1.style.backgroundColor = 'rgba(128, 128, 128, 0.281)';
+    buttonlevel0.style.backgroundColor = 'transparent';
+    buttonlevel2.style.backgroundColor = 'transparent';
+}
+
+buttonlevel2.onclick = () => { 
+    document.querySelector('.level1').style.display = 'none';
+    document.querySelector('.level0').style.display = 'none';
+    document.querySelector('.level2').style.display = 'block';
+    buttonlevel2.style.backgroundColor = 'rgba(128, 128, 128, 0.281)';
+    buttonlevel1.style.backgroundColor = 'transparent';
+    buttonlevel0.style.backgroundColor = 'transparent';
 }
 
 let buttonpierre_1 = document.querySelector('#pierre_1');
@@ -314,11 +328,7 @@ buttonciseau_1.onclick = () => {
     tab.push(2)
 }
 
-buttonlevel2.onclick = () => { 
-    document.querySelector('.level1').style.display = 'none';
-    document.querySelector('.level0').style.display = 'none';
-    document.querySelector('.level2').style.display = 'block';
-}
+
 
 let buttonpierre_2 = document.querySelector('#pierre_2');
 let buttonfeuille_2 = document.querySelector('#feuille_2');
@@ -341,3 +351,4 @@ buttonciseau_2.onclick = () => {
     resultats(2)
     tab.push(2)
 }
+
